@@ -1,20 +1,21 @@
 <link rel="stylesheet" href="../src/styleadmin.css">
 <?php
+ session_start();  
 if ($_GET['var'] == 'ajou_client') {
                 $client = $cnx->query('select * from type_client');
                 $listeclient = $client->fetchall(PDO::FETCH_OBJ);  
 ?>
         <div class="formulaire">
-                <form action="../controleur/executeoption.php" method="get" id="myform">
+                <form action="../controleur/executeoption.php" method="get" id="myform" onsubmit='checkinput()'>
                     <h3>ajouter votre client</h3>
-                    <input type="text" name="nom" id="nom" placeholder="Entrez le nom" required >
+                    <input type="text" name="nom" id="nom" placeholder="Entrez le nom"  >
                     <span id="error"></span>
-                    <input type="text" name="prenom" id="prenom" placeholder="Entrez le prenom" required>
+                    <input type="text" name="prenom" id="prenom" placeholder="Entrez le prenom" >
                     <span id="error1"></span>
                     <input type="text" name="adresse" placeholder="Adresse">
-                    <input type="text" name="mail" id="mail" placeholder="Email" required>
+                    <input type="text" name="mail" id="mail" placeholder="Email" >
                     <span id="error2"></span>
-                    <input type="text" name="tel" id="num" placeholder="Numero de telephone" required>
+                    <input type="text" name="tel" id="num" placeholder="Numero de telephone" >
                     <span id="error3"></span>
                     <input id="prodId" name="prodId" type="hidden" value="ajou_client" >
                     <DIV class="BOX1">
@@ -40,7 +41,7 @@ if ($_GET['var'] == 'ajou_client') {
 
     
 <?php
-}
+}else
 if ($_GET['var'] == 'sup_client') {
                 $client = $cnx->query('select * from client');
                 $listeclient = $client->fetchall();  
@@ -68,7 +69,7 @@ if ($_GET['var'] == 'sup_client') {
 
     
 <?php
-}
+}else
 if ($_GET['var'] == 'ajou_repa') {
 ?>
 <div class="formulaire">
@@ -154,7 +155,7 @@ $listerepa= $repa->fetchall(PDO::FETCH_OBJ);
 
 
 <?php
-}
+}else
 if ($_GET['var'] == 'sup_repa') {
     $repa = $cnx->query('select * from materiel_reparation NATURAL JOIN client where Repa_fini = 0');
     $listerepa = $repa->fetchall();  
@@ -182,7 +183,7 @@ if ($_GET['var'] == 'sup_repa') {
 
 
 <?php
-}
+}else
 if ($_GET['var'] == 'ajou_marque') {
 ?>
 <div class="formulaire">
@@ -195,7 +196,7 @@ if ($_GET['var'] == 'ajou_marque') {
     </form>
 </div>
 <?php
-}
+}else
 if ($_GET['var'] == 'ajou_vente') {
     $marque = $cnx->query('select * from marque');
     $listemarque = $marque->fetchall();  

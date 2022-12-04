@@ -14,7 +14,7 @@ $var = $_GET;
     </div>
     <div class="content">
       <div>
-        <h2>Smartphone</h2>
+        <a href="../controleur/marque.php"><h2>Smartphone</h2></a>
         <p>Découvrez toute une partie de notre site consacré aux diverses solutions de réparation de portable.
         </p>
       </div>
@@ -26,7 +26,7 @@ $var = $_GET;
     </div>
     <div class="content">
       <div>
-        <h2>Tablette</h2>
+        <a href="../controleur/marque.php"><h2>Tablette</h2></a>
         <p>Découvrez toute une partie de notre site consacré aux diverses solutions de réparation de tablette.
         </p>
       </div>
@@ -38,7 +38,7 @@ $var = $_GET;
     </div>
     <div class="content">
       <div>
-        <h2>Ordinateur</h2>
+        <a href="../controleur/marque.php"><h2>Ordinateur</h2></a>
         <p>Prolongez le parfait état de fonctionnement de votre ordinateur.
         </p>
       </div>
@@ -50,7 +50,7 @@ $var = $_GET;
     </div>
     <div class="content">
       <div>
-        <h2>Console de jeux</h2>
+        <a href="../controleur/marque.php"><h2>Console de jeux</h2></a>
         <p>Les réparateurs de consoles de chez Xpressphone s’occupent de tous vos problèmes de consoles.
         </p>
       </div>

@@ -10,14 +10,14 @@
 ?>
     <h1> le client a bien été rajouté</h1>
 <?php
-    }
+    }else
     if ($_GET['prodId'] == 'sup_client') {
     $supclient=$_GET;
     $cnx->exec("DELETE FROM `client` WHERE Id_client = $supclient[client]");  
 ?>
     <h1> le client a bien été Suprimmer</h1>
 <?php
-}
+}else
 if ($_GET['prodId'] == 'ajou_repa') {
     $ajouclient=$_GET;
     $model = addslashes($ajouclient['model']);
@@ -29,14 +29,14 @@ if ($_GET['prodId'] == 'ajou_repa') {
 ?>
     <h1> La reparation a bien été ajouter</h1>
 <?php
-}
+}else
 if ($_GET['prodId'] == 'arch_repa') {
     $archirepa=$_GET;
     $cnx->exec("UPDATE `materiel_reparation` SET `Repa_fini`= 1 WHERE 	Id_materiel_repa = $archirepa[repa]");  
 ?>
     <h1> Archivage reussi</h1>
 <?php
-}
+}else
 if ($_GET['prodId'] == 'ajou_marque') {
     $ajoumarque=$_GET;
     $marque = addslashes($ajoumarque['marque']);
@@ -46,7 +46,7 @@ if ($_GET['prodId'] == 'ajou_marque') {
 ?>
     <h1> Ajout reussi</h1>
 <?php
-}
+}else
 if ($_GET['prodId'] == 'ajou_vente') {
     $ajouvente=$_GET;
     $model = addslashes($ajouvente['model']);

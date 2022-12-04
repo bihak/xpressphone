@@ -4,10 +4,16 @@ const prenom = document.getElementById('prenom');
 const mail = document.getElementById('mail');
 const num = document.getElementById('num');
 const marque = document.getElementById('tva');
+var bool = bool1 = bool2 = bool3 = bool4 =  false;
 
 myform.addEventListener("submit" , function(e){
- // e.preventDefault();
-  checkinput();
+  if (checkinput()==true) {
+    checkinput()
+  }else{
+    e.preventDefault();
+  }
+  
+  
 })
 function checkinput() {
     const nomvalue = nom.value.trim();
@@ -27,6 +33,7 @@ function checkinput() {
       nomerreurregex(nomvalue,"le nom doit comporter des lettre et des tirets uniquement" );
     }else{
       nombon(nomvalue);
+      bool = true;
     }
 
     if (prenomvalue === "") {
@@ -35,6 +42,7 @@ function checkinput() {
       prenomerreurregex(prenomvalue,"le prenom doit comporter des lettre et des tirets uniquement" );
     }else{
       prenombon(prenomvalue);
+      bool1 = true;
     }
     //controle du champs mail
     if (emailvalue === "") {
@@ -43,6 +51,7 @@ function checkinput() {
       mailerreurregex(emailvalue,"mail invalid" );
     }else{
       mailbon(emailvalue);
+      bool2 = true;
     }
     //controle du champs num
     if (numvalue === "") {
@@ -51,7 +60,14 @@ function checkinput() {
       numerreurregex(emailvalue,"numero de telephone invalid" );
     }else{
       numbon(numvalue);
+      bool3 = true;
     }
+    if (bool == true && bool1 == true && bool2 == true && bool3 == true) {
+      bool4= true
+  }else{
+      bool4= false
+  }
+  return bool4;
   //  //controle du champs tva
   //  if (emailvalue === "") {
   //   tvabon(tvavalue);

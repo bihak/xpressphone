@@ -46,7 +46,7 @@
       <p>Exigez le meilleur pour votre smartphone, votre tablette ou votre console de jeu en nous confiant 
         sa réparation dans notre boutique. Récupérez votre appareil comme neuf après seulement 1 heure.</p>
     </div>
-    <div class="col-6 box2-1"><a href="./controleur/repa.php?var=smar">
+    <div class="col-6 col-lg-6 box2-1"><a href="./controleur/repa.php?var=smar">
       <img src="image/4.png" alt=""><h4>Smartphone</h4>
       </a>
     </div>
@@ -75,27 +75,27 @@
         <div class="img_box3"><img src="image/iphone14.png" class="card-img-top img_box3_1" alt="..."></div>
         
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-light bouton">Go somewhere</a>
+            <h5 class="card-title">IPHONE 13 PRO</h5>
+            <p class="card-text">Iphone 13 Pro black 128 Go garantie 1 an</p>
+            <a href="#" class="btn btn-light bouton">VOIR PLUS</a>
         </div>
     </div>
     <div class="card col-4 box3">
         <div class="img_box3"><img src="image/iphone14.png" class="card-img-top img_box3_1" alt="..."></div>
         
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-light bouton">Go somewhere</a>
+            <h5 class="card-title">IPHONE 13 PRO</h5>
+            <p class="card-text">Iphone 13 Pro black 128 Go garantie 1 an</p>
+            <a href="#" class="btn btn-light bouton">VOIR PLUS</a>
         </div>
     </div>
     <div class="card col-4 box3">
         <div class="img_box3"><img src="image/iphone14.png" class="card-img-top img_box3_1" alt="..."></div>
         
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-light bouton">Go somewhere</a>
+            <h5 class="card-title">IPHONE 13 PRO</h5>
+            <p class="card-text">Iphone 13 Pro black 128 Go garantie 1 an</p>
+            <a href="#" class="btn btn-light bouton">VOIR PLUS</a>
         </div>
     </div>
 </div>
@@ -109,21 +109,22 @@
     <div class="box4_news">
         <form>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Address mail</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp"></small>
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">Valider</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
         </form>
     </div>
 </div>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.7055909841265!2d3.0852789158671996!3d50.37204397946462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2c934e020f243%3A0xe48e32e9bafd7a30!2sXpress%20Phone!5e0!3m2!1sfr!2sfr!4v1665134103045!5m2!1sfr!2sfr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-  <div class="footer">
+<div class="footer">
+
 </div>
 
     

@@ -1,6 +1,6 @@
 
 body{
-    background-color: #fec9fb;
+    background-color: #e8000075;
     width: 100%;
     height: 50%;
 }
@@ -29,10 +29,10 @@ input{
     background-color: #F7F7F7;
 }
 input[type="submit"]{
-    background-color: #19BD19;
+    background-color: #80808063;
 }
 input[type="submit"]:hover{
-    background-color: #5eda5e;
+    background-color: #7b7b7b;
 }
 h1,h3{
     font-size:4vw;

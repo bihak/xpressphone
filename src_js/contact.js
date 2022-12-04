@@ -5,9 +5,9 @@ const num = document.getElementById('num');
 const marque = document.getElementById('marque');
 const model = document.getElementById('model');
 const mess = document.getElementById('mess');
+var bool = bool1 = bool2 = bool3 = bool4 = bool5 = bool6 = false;
 
-myform.addEventListener("submit" , function(e){
-  e.preventDefault();
+myform.addEventListener("submit" , function(){
   checkinput();
 })
 function checkinput() {
@@ -27,6 +27,7 @@ function checkinput() {
     nomerreurregex(nomvalue,"le nom doit comporter des lettre et des tirets uniquement" );
   }else{
     nombon(nomvalue);
+    bool = true;
   }
   //controle du champs mail
   if (emailvalue === "") {
@@ -35,6 +36,7 @@ function checkinput() {
     mailerreurregex(emailvalue,"mail invalid" );
   }else{
     mailbon(emailvalue);
+    bool1 = true;
   }
   //controle du champs num
   if (numvalue === "") {
@@ -43,25 +45,35 @@ function checkinput() {
     numerreurregex(emailvalue,"numero de telephone invalid" );
   }else{
     numbon(numvalue);
+    bool2 = true;
   }
   //controle du champs marque
   if (marquevalue === "") {
     marqueerreur(marque , "le champs marque est requis");
   }else{
     marquebon(marquevalue);
+    bool3 = true;
   }
   //controle du champs marque
   if (modelvalue === "") {
     modelerreur(model , "le champs model est requis");
   }else{
     modelbon(modelvalue);
+    bool4 = true;
   }
   //controle du champs marque
   if (messvalue === "") {
     messerreur(mess , "le champs message est requis");
   }else{
     messbon(messvalue);
+    bool5 = true;
   }
+  if (bool == true && bool1 == true && bool2 == true && bool3 == true && bool4 == true && bool5 == true) {
+      bool6= true
+  }else{
+      bool6= false
+  }
+  return bool6;
 }
 //les fonction pour le controle du nom
 function nomerreur(input, message) {

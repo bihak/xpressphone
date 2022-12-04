@@ -1,3 +1,6 @@
+body{
+    text-decoration: none;
+}
 img{
     width: 40%;
     height: auto;
@@ -21,6 +24,13 @@ img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: solid rgb(218, 218, 218);
     background-color: rgba(205, 205, 205, 0.128);
+}
+.box2-1 a{
+    color: black;
+    font-size: 80%;
+}
+.box2-1 a h4{
+    font-size: 110%;
 }
 .arrivage{
     margin-top: 20px;
@@ -63,5 +73,14 @@ iframe{
 .foot{
     background-color: #222831;
     margin-top: -54PX;
-    height: 320PX;
+    height: 50%;
+}
+a{
+    text-decoration: none;
+}
+footer a{
+    color: rgb(255, 255, 255);
+}
+footer a:hover{
+    color: rgb(240, 8, 8);
 }

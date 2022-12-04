@@ -2,11 +2,13 @@
 <div class="container">
 <div class="tableaux">
 <?php
+ session_start();  
+ 
 if ($_GET['var']=='auter') {
 ?>
     <h1 class="titre">Gérer vos client et vas reparation</h1>
 <?php
-}
+}else
 if ($_GET['var']=='client') {
     $client = $cnx->query('select * from client NATURAL JOIN type_client');
     $listeclient = $client->fetchall(); 
@@ -44,7 +46,7 @@ if ($_GET['var']=='client') {
 ?>
 </table>
 <?php
-}
+}else
 if ($_GET['var']=='repa') {
     $repa = $cnx->query('SELECT * FROM `materiel_reparation` NATURAL JOIN `client` NATURAL JOIN `marque`');
     $listereparation = $repa->fetchall(); 
@@ -82,7 +84,7 @@ if ($_GET['var']=='repa') {
 ?>
 </table>
 <?php
-}
+}else
 if ($_GET['var']=='vente') {
     $vente = $cnx->query('SELECT * FROM `vente` NATURAL JOIN `marque` NATURAL JOIN `type_vente`');
     $listevente = $vente->fetchall(); 

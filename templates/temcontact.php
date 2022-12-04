@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="../src/contact.css">
 <div class="container">
   <h1>contact</h1>
-  <form action="/action_page.php" method="post" id="myform" >
+  <form action="/action_page.php" method="post" id="myform" onsubmit='return checkinput();' >
     <label for="name">Nom</label>
     <input type="text" id="name" name="name" placeholder="Nom">
 	<span id="error"></span>
